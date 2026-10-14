@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Asmita R B | Senior Quality Engineer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#F3F7FC;--grid:#D5E1F0;--ink:#0B1F3A;--mute:#4A5F7A;--card:#FFFFFF;--line:#B9CBE2;--blue:#1D5FD1;--pass:#0E8A57;--term:#0B1F3A;--termink:#DCE8F8;--termpass:#4FD99B;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1628;--grid:#14263F;--ink:#E6EEF9;--mute:#9BB0CC;--card:#102038;--line:#25405F;--blue:#6EA4FF;--pass:#4FD99B;--term:#050E1C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0A1628;--grid:#14263F;--ink:#E6EEF9;--mute:#9BB0CC;--card:#102038;--line:#25405F;--blue:#6EA4FF;--pass:#4FD99B;--term:#050E1C;color-scheme:dark}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px;color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:500}
+nav .links{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--blue)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:48px 0 72px}
+.hero h1{font-size:clamp(3rem,8vw,5.6rem);font-weight:800;letter-spacing:-.03em}
+.role{font-size:1.35rem;font-weight:500;color:var(--blue);margin:14px 0 18px;font-family:"Bricolage Grotesque",sans-serif}
+.hero p{max-width:46ch;color:var(--mute);margin:0 0 26px}
+.btn{display:inline-block;padding:12px 22px;border:2px solid var(--ink);border-radius:4px;font-weight:500;text-decoration:none;color:var(--ink);margin:0 10px 10px 0}
+.btn.fill{background:var(--ink);color:var(--bg)}
+.btn:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.term{background:var(--term);color:var(--termink);border-radius:8px;border:1px solid var(--line);font:400 14px/1.8 "IBM Plex Mono",monospace;box-shadow:8px 8px 0 var(--line);overflow:hidden}
+.term .bar{padding:9px 14px;border-bottom:1px solid #223c5c;color:#8DA6C6;font-size:12.5px}
+.term .body{padding:16px 18px;min-height:268px}
+.term .l{display:block;opacity:0}
+.term .l.on{opacity:1}
+.ok{color:var(--termpass)}
+.sum{margin-top:10px;padding-top:10px;border-top:1px dashed #2c4a70}
+section{padding:56px 0;border-top:2px solid var(--ink)}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:700;margin-bottom:28px;letter-spacing:-.01em}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.about p{margin:0 0 14px;max-width:60ch}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.facts li{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--blue);padding:12px 16px}
+.facts b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.5rem;display:block}
+.tl{position:relative;margin:0;padding:0 0 0 28px;list-style:none;border-left:3px solid var(--blue)}
+.tl li{position:relative;padding-bottom:30px}
+.tl li:before{content:"";position:absolute;left:-37px;top:7px;width:15px;height:15px;background:var(--bg);border:3px solid var(--blue);border-radius:50%}
+.tl h3{font-size:1.4rem}
+.tl .when{color:var(--mute);font-size:.95rem;margin:2px 0 6px}
+.tl p{margin:0;max-width:62ch;color:var(--mute)}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.sk{background:var(--card);border:1px solid var(--line);padding:20px}
+.sk h3{font-size:1.15rem;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid var(--line);background:var(--bg);padding:3px 11px;border-radius:99px;font-size:.92rem}
+.projects{display:grid;gap:18px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:6px}
+.proj summary{cursor:pointer;padding:18px 22px;display:flex;justify-content:space-between;gap:16px;list-style:none;align-items:center}
+.proj summary::-webkit-details-marker{display:none}
+.proj summary:after{content:"+";font:500 1.6rem/1 "IBM Plex Mono",monospace;color:var(--blue);transition:transform .2s}
+.proj[open] summary:after{transform:rotate(45deg)}
+.proj h3{font-size:1.3rem}
+.proj small{display:block;color:var(--mute);font-size:.92rem;margin-top:3px}
+.proj ul{margin:0;padding:0 22px 20px 42px;color:var(--mute)}
+.proj li{margin-bottom:7px}
+.edu{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.edu div{background:var(--card);border:1px solid var(--line);padding:18px}
+.edu b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.15rem;display:block}
+.edu em{display:block;font-style:normal;color:var(--blue);font-weight:500;margin-top:8px}
+.contact p{max-width:52ch;color:var(--mute);margin:0 0 20px}
+footer{padding:28px 0 40px;border-top:2px solid var(--ink);color:var(--mute);font-size:.9rem}
+@media (max-width:820px){.hero,.about,.skills,.edu{grid-template-columns:1fr}.hero{padding-top:20px}nav .links{gap:14px;font-size:.95rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.term .l{opacity:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main"><b>ARB</b><div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div>
+<h1>Asmita R B</h1>
+<div class="role">Senior Quality Engineer</div>
+<p>I build AI-powered test agents and automation that catch problems early, so teams ship software people can trust.</p>
+<a class="btn fill" href="mailto:rbasmita98@gmail.com">Email me</a><a class="btn" href="https://linkedin.com/in/asmita-rb-12397b155">LinkedIn</a>
+</div>
+<div class="term" role="img" aria-label="A test run showing five passing checks about Asmita's profile">
+<div class="bar">asmita.profile.test</div>
+<div class="body" id="run">
+<span class="l">$ run suite --profile asmita</span>
+<span class="l"><span class="ok">PASS</span> builds AI test execution agents with MCP</span>
+<span class="l"><span class="ok">PASS</span> scores LLMs on accuracy and hallucination</span>
+<span class="l"><span class="ok">PASS</span> automates web, API and CI pipelines</span>
+<span class="l"><span class="ok">PASS</span> audits accessibility against WCAG</span>
+<span class="l"><span class="ok">PASS</span> 7+ years: Temenos, WNS-Vuram, Appian</span>
+<span class="l sum"><span class="ok">5 passed</span>, 0 failed</span>
+</div>
+</div>
+</header>
+
+<section id="about"><h2>About</h2>
+<div class="about">
+<div>
+<p>I'm a quality engineer who moved from banking data platforms into insurance workflows and now into AI-enabled testing. I lead quality work on my team and care about tests that stay stable and useful as products grow.</p>
+<p>I'm looking for an AI-enabled quality engineering role where I can apply AI, automation and intelligent testing to speed up testing cycles.</p>
+</div>
+<ul class="facts"><li><b>7+ years</b>in quality engineering</li><li><b>3 companies</b>Temenos, WNS-Vuram, Appian</li><li><b>Intern to Lead</b>growth path across roles</li></ul>
+</div></section>
+
+<section id="experience"><h2>Experience</h2>
+<ol class="tl">
+<li><h3>Appian Corporation</h3><div class="when">Senior Quality Engineer · Sept 2025 to present · Chennai</div><p>Leads quality for a government source selection product and builds an AI test execution agent.</p></li>
+<li><h3>WNS-Vuram</h3><div class="when">Senior Quality Engineer to Lead Quality Engineer · Jun 2022 to Sept 2025 · Chennai</div><p>Tested insurance underwriting, connected life underwriting and AI document center applications.</p></li>
+<li><h3>Temenos</h3><div class="when">Intern to Senior Quality Engineer · Jan 2019 to May 2022 · Chennai</div><p>Tested data and API products for banks, including client UAT support.</p></li>
+</ol></section>
+
+<section id="skills"><h2>Skills</h2>
+<div class="skills">
+<div class="sk"><h3>AI and intelligence</h3><div class="chips"><span>AI agents</span><span>AI-assisted test automation</span><span>RAG</span><span>MCP</span><span>Knowledge-based testing</span><span>LLM testing</span></div></div>
+<div class="sk"><h3>AI development tools</h3><div class="chips"><span>Kiro</span><span>Amazon Q</span></div></div>
+<div class="sk"><h3>Languages and frameworks</h3><div class="chips"><span>Java</span><span>Python</span><span>pytest</span><span>TestNG</span><span>Data-driven</span><span>Page Object Model</span></div></div>
+<div class="sk"><h3>Test and project tools</h3><div class="chips"><span>Xray</span><span>Qmetry</span><span>Jira</span><span>Postman</span><span>Kafka</span><span>SQL</span></div></div>
+</div></section>
+
+<section id="projects"><h2>Projects</h2>
+<div class="projects">
+<details class="proj" open><summary><div><h3>GAM: Government Source Selection</h3><small>Appian Corporation</small></div></summary><ul>
+<li>Built an AI-powered test execution agent using application knowledge bases, steering files and MCP database integrations.</li>
+<li>Compared multiple LLMs with a structured rubric covering accuracy, hallucination, reasoning quality and consistency, to pick the best model per testing workflow.</li>
+<li>Wrote test plans and strategies across functional, integration, regression and end-to-end scenarios.</li>
+<li>Automated web test suites with Page Object Model frameworks, ran them in CI pipelines, and investigated failures to keep them stable.</li>
+<li>Automated in-sprint, wrote performance scripts for new features, and audited accessibility against WCAG.</li>
+<li>Worked with developers, product owners and UX designers to build quality into the SDLC.</li></ul></details>
+
+<details class="proj"><summary><div><h3>Insurance Underwriting: P&amp;C Application</h3><small>WNS-Vuram</small></div></summary><ul>
+<li>Covered add-on modules: underwriting settings, authenticated broker portal, automated routing, Guidewire quoting, OpenAI module, referral tasks and submission record AI chat.</li>
+<li>Analyzed requirements to find test scenarios and risks, and flagged gaps early in the development cycle.</li></ul></details>
+
+<details class="proj"><summary><div><h3>Connected Underwriting: LIFE Application</h3><small>WNS-Vuram</small></div></summary><ul>
+<li>Tested the life settings module and Swiss Re's Magnum Pure decision-making module.</li>
+<li>Logged, tracked and retested defects through their lifecycle.</li></ul></details>
+
+<details class="proj"><summary><div><h3>AI Doc Center Application</h3><small>WNS-Vuram</small></div></summary><ul>
+<li>Picked test cases for automation and maintained automated suites using pytest.</li></ul></details>
+
+<details class="proj"><summary><div><h3>Extended Columns in TDH and Data Warehouse Integration</h3><small>Temenos</small></div></summary><ul>
+<li>Designed test and script plans, executed tests and automated functional scenarios with SEAT.</li>
+<li>Tested APIs with Postman, and ran functional, automation and integration tests with Kafka and SQL.</li>
+<li>Demoed to internal and client teams, delivered with zero client-reported defects, and supported Canadian Western Bank through implementation and UAT.</li></ul></details>
+</div></section>
+
+<section id="education"><h2>Education</h2>
+<div class="edu">
+<div><b>B.E. Mechatronics</b>Bannari Amman Institute of Technology, Sathyamangalam<br>2015 to 2019<em>CGPA 8.9 / 10</em></div>
+<div><b>HSC</b>T.V.S. Matriculation Higher Secondary School, Madurai<br>2014 to 2015<em>90.75%</em></div>
+<div><b>SSLC</b>T.V.S. Matriculation Higher Secondary School, Madurai<br>2012 to 2013<em>95%</em></div>
+</div></section>
+
+<section id="contact" class="contact"><h2>Let's talk</h2>
+<p>Open to AI-enabled quality engineering roles. The quickest way to reach me is email.</p>
+<a class="btn fill" href="mailto:rbasmita98@gmail.com">rbasmita98@gmail.com</a><a class="btn" href="https://linkedin.com/in/asmita-rb-12397b155">linkedin.com/in/asmita-rb-12397b155</a></section>
+</div>
+<footer><div class="wrap">Asmita R B · Chennai, India</div></footer>
+<script>
+(function(){
+var ls=document.querySelectorAll('#run .l');
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ls.forEach(function(el,i){
+if(reduce){el.classList.add('on');return;}
+setTimeout(function(){el.classList.add('on');},500+i*650);
+});
+})();
+</script>
+</body>
+</html>
